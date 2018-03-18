@@ -17,7 +17,7 @@ sudo make install
 ```
 
 
-## Syntax and i3 status integration
+## Syntax
 
 ```
 notify_touchy ( arguments )
