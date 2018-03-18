@@ -1,0 +1,8 @@
+[Unit]
+# Not finished. idk
+
+[Service]
+ExecStart=/usr/local/bin/notify_touchy
+
+[Install]
+WantedBy=default.target
