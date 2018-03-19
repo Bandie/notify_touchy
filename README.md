@@ -22,8 +22,7 @@ sudo make install
 ```
 notify_touchy ( arguments )
 
-It checks if a program has a specific return code within some time. If it has a file will be touched. If not it will be erased.
-The purpose is to integrate it with i3status.
+It checks if a program has a specific return code within some time. If it has not a notification will appear.
 
 Arguments:
 

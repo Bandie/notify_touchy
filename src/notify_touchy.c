@@ -23,9 +23,7 @@ char *prog = NULL;
 
 void help(){
   printf("notify_touchy ( arguments )\n\n"
-         "It checks if a program has a specific return code within some time. If it has a file will be touched. "
-         "If not it will be erased.\n"
-         "The purpose is to integrate it with i3status.\n\n"
+         "It checks if a program has a specific return code within some time. If it has not a notification will appear.\n\n"
          "Arguments:\n\n"
          "-h, --help                         Shows this here.\n"
          "-p, --program [program or script]  Executes and checks this program for the return code. (Required)\n"
