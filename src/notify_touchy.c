@@ -153,9 +153,9 @@ int main(int argc, char *argv[]){
       wait(&statval);
       if(WIFEXITED(statval)){
         if(verbose) 
-          printf("Exit: %d\n", statval);
+          printf("Exit: %d\n", WEXITSTATUS(statval));
 
-        if(statval != returncode){
+        if(WEXITSTATUS(statval) != returncode){
           char s[100];
           sprintf(s, "Warning: %s returned something bad.", prog);
           printf("%s\n", s);
