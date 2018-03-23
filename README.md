@@ -2,7 +2,7 @@
 
 
 ## Purpose
-A fork of [i3status-touchy](https://github.com/Bandie/i3status-touchy). 
+A fork of [i3status_touchy](https://github.com/Bandie/i3status_touchy). 
 A service which checks the return code of a program/script and notifies you if it has a bad return code. 
 In i3status-touchy there will be a file created. This doesn't happen here anymore. Instead it uses libnotify.
 
