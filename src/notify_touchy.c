@@ -57,13 +57,13 @@ int main(int argc, char *argv[]){
 
   // Argument handling
   for(int i=0; i<argc; i++){
-    if(!strcmp(argv[i], "--help") || !strcmp(argv[i], "-h")){
+    if(!strncmp(argv[i], "--help", 256) || !strncmp(argv[i], "-h", 256)){
       help();
       return 0;
     }
-    if(!strcmp(argv[i], "--verbose") || !strcmp(argv[i], "-v"))
+    if(!strncmp(argv[i], "--verbose", 256) || !strncmp(argv[i], "-v", 256))
       verbose = 1;
-    if((!strcmp(argv[i], "--program") || !strcmp(argv[i], "-p")) && (i+1) < argc){
+    if((!strncmp(argv[i], "--program", 256) || !strncmp(argv[i], "-p", 256)) && (i+1) < argc){
       int k = 0;
       while(argv[i+1][k]){
         if(argv[i+1][k] == ' ')
@@ -83,7 +83,7 @@ int main(int argc, char *argv[]){
       }
       
     }
-    if((!strcmp(argv[i], "--return") || !strcmp(argv[i], "-r")) && (i+1) < argc){
+    if((!strncmp(argv[i], "--return", 256) || !strncmp(argv[i], "-r", 256)) && (i+1) < argc){
       int j = 0;
       while(argv[i+1][j]){
         if(j==0 && argv[i+1][j] == '-') j++;
@@ -95,7 +95,7 @@ int main(int argc, char *argv[]){
       }
       sscanf(argv[i+1], "%d", &returncode);
     }
-    if((!strcmp(argv[i], "--sleep") || !strcmp(argv[i], "-s")) && (i+1) < argc){
+    if((!strncmp(argv[i], "--sleep", 256) || !strncmp(argv[i], "-s", 256)) && (i+1) < argc){
       int j=0;
       while(argv[i+1][j]){
         if(!isdigit(argv[i+1][j]) || argv[i+1][0] == '0'){
