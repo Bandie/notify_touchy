@@ -4,7 +4,7 @@
 
 all: 
 	mkdir -p bin
-	cc src/notify_touchy.c -o bin/notify_touchy `pkg-config --cflags --libs libnotify` 
+	cc --std=c99 src/notify_touchy.c -o bin/notify_touchy `pkg-config --cflags --libs libnotify` 
 
 install:
 	mkdir -p /usr/local/bin
