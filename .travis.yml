@@ -1,2 +1,5 @@
 language: C
 sudo: enabled
+apt:
+  packages:
+    - libnotify-dev
