@@ -23,3 +23,5 @@ clean:
 	rm bin/notify_touchy
 	rmdir bin
 
+test:
+	@printf "What to test?\n"

@@ -1,4 +1,4 @@
-# notify\_touchy
+# notify\_touchy [![Build Status](https://travis-ci.org/Bandie/notify_touch.svg?branch=master)](https://travis-ci.org/Bandie/notify_touch)
 
 
 ## Purpose
