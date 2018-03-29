@@ -1,5 +1,7 @@
 language: C
 sudo: enabled
-apt:
-  packages:
-    - libnotify-dev
+
+before_install: 
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libnotify-dev
+
