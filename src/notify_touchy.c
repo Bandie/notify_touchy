@@ -50,7 +50,6 @@ int main(int argc, char *argv[]){
   int sleeptm = 20;
   int verbose = 0;
   int statval;
-  int progargc = 1;
   char *progargv[PROGARGVSIZE];
  
 
