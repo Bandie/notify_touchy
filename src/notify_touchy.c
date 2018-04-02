@@ -64,12 +64,6 @@ int main(int argc, char *argv[]){
     if(!strncmp(argv[i], "--verbose", 256) || !strncmp(argv[i], "-v", 256))
       verbose = 1;
     if((!strncmp(argv[i], "--program", 256) || !strncmp(argv[i], "-p", 256)) && (i+1) < argc){
-      int k = 0;
-      while(argv[i+1][k]){
-        if(argv[i+1][k] == ' ')
-          progargc++;
-        k++;
-      }
       
       char *prgargptr;
       prgargptr = strtok(argv[i+1], " ");
