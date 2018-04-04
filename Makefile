@@ -9,11 +9,10 @@ all:
 install:
 	mkdir -p /usr/local/bin
 	cp ./bin/notify_touchy /usr/local/bin/
-	cp ./systemd/notify_touchy.service /etc/systemd/system
 	chown root:root /usr/local/bin/notify_touchy
 	chmod 740 /usr/local/bin/notify_touchy
 	@printf "Done.\n"
-	@printf "You may want to enable and start the service: \"systemctl enable notify_touchy ; systemctl start notify_touchy\"\n"	@printf "The file will be called /verified"
+	@printf "You may want to configure a service for this program. Look into the systemd directory for a systemd example.\n"
 
 uninstall:
 	rm /usr/sbin/local/notify_touchy
